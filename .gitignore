@@ -1,0 +1,5 @@
+# System files
+read_docx.ps1
+*.docx
+Thumbs.db
+.DS_Store

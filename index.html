@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Reu!! 🎂</title>
+    <meta name="description" content="An interactive birthday surprise for Reu — full of animations, humor, and love!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+    <!-- ============ STATE 1: Landing ============ -->
+    <section id="state-landing" class="state active">
+        <div class="landing-content">
+            <h1 class="title-text" id="title-text">Happy Birthday Reu!! 🎂</h1>
+            <div class="sparkle-container" id="sparkle-container"></div>
+        </div>
+    </section>
+
+    <!-- ============ STATE 2: Surprise Prompt ============ -->
+    <section id="state-surprise" class="state">
+        <div class="surprise-content">
+            <h2 class="surprise-title">Click for your surprise</h2>
+            <div class="gift-box-wrapper" id="gift-box">
+                <svg class="gift-box-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Gift Box Lid -->
+                    <g class="gift-lid" id="gift-lid">
+                        <rect x="25" y="55" width="150" height="30" rx="6" fill="url(#lidGrad)" stroke="#b8336a"
+                            stroke-width="2" />
+                        <rect x="88" y="45" width="24" height="40" rx="4" fill="url(#ribbonGrad)" />
+                        <!-- Bow -->
+                        <ellipse cx="88" cy="52" rx="18" ry="12" fill="#ff6b9d" opacity="0.9" />
+                        <ellipse cx="112" cy="52" rx="18" ry="12" fill="#ff6b9d" opacity="0.9" />
+                        <circle cx="100" cy="52" r="6" fill="#ffd700" />
+                    </g>
+                    <!-- Gift Box Body -->
+                    <rect x="30" y="85" width="140" height="90" rx="8" fill="url(#boxGrad)" stroke="#b8336a"
+                        stroke-width="2" />
+                    <!-- Ribbon vertical -->
+                    <rect x="92" y="85" width="16" height="90" fill="url(#ribbonGrad)" opacity="0.8" />
+                    <!-- Ribbon horizontal -->
+                    <rect x="30" y="120" width="140" height="16" fill="url(#ribbonGrad)" opacity="0.6" />
+                    <!-- Stars decoration -->
+                    <text x="55" y="115" font-size="14" fill="#ffd700">✦</text>
+                    <text x="135" y="145" font-size="12" fill="#ffd700">✦</text>
+                    <text x="50" y="158" font-size="10" fill="#ffd700">★</text>
+                    <text x="145" y="110" font-size="10" fill="#ffd700">★</text>
+                    <!-- Gradients -->
+                    <defs>
+                        <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#e84393" />
+                            <stop offset="100%" style="stop-color:#fd79a8" />
+                        </linearGradient>
+                        <linearGradient id="lidGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#d63384" />
+                            <stop offset="100%" style="stop-color:#e84393" />
+                        </linearGradient>
+                        <linearGradient id="ribbonGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:#ffd700" />
+                            <stop offset="100%" style="stop-color:#f0c040" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <div class="gift-glow"></div>
+            </div>
+            <p class="tap-hint">Tap the gift! 🎁</p>
+        </div>
+    </section>
+
+    <!-- ============ STATE 3: Flower Burst ============ -->
+    <section id="state-burst" class="state">
+        <div class="burst-container" id="burst-container"></div>
+    </section>
+
+    <!-- ============ STATE 4: Joke Message ============ -->
+    <section id="state-joke" class="state">
+        <div class="joke-content">
+            <p class="joke-line1">Just kidding 😜</p>
+            <p class="joke-line2">I'm the best birthday gift you could ever receive!! 😎🎁</p>
+        </div>
+    </section>
+
+    <!-- ============ STATE 5: Meme Carousel ============ -->
+    <section id="state-carousel" class="state">
+        <div class="carousel-wrapper">
+            <h2 class="carousel-title">Versions of Obal</h2>
+            <div class="carousel-container" id="carousel-container">
+                <div class="carousel-track" id="carousel-track">
+                    <div class="carousel-slide">
+                        <img src="assets/gifs/cat1.png" alt="Birthday cat 1" loading="lazy">
+                        <p class="meme-caption">When someone says "make a wish" 🎂</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/gifs/monkey1.png" alt="Birthday monkey 1" loading="lazy">
+                        <p class="meme-caption">Me arriving at your birthday party 🥳🐵</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/gifs/cat2.png" alt="Birthday cat 2" loading="lazy">
+                        <p class="meme-caption">POV: You just opened my gift 🎁</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/gifs/donkey1.png" alt="Birthday donkey" loading="lazy">
+                        <p class="meme-caption">When they say "you're getting old" 👑🫏</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/gifs/cat3.png" alt="Birthday cat 3" loading="lazy">
+                        <p class="meme-caption">Party mode: ACTIVATED 🎉</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/gifs/monkey2.png" alt="Birthday monkey 2" loading="lazy">
+                        <p class="meme-caption">Me vs. the birthday cake 🍰🐒</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/gifs/cat4.png" alt="Birthday cat 4" loading="lazy">
+                        <p class="meme-caption">Making birthday wishes like a pro 🕯️😼</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/gifs/cat5.png" alt="Birthday cat 5" loading="lazy">
+                        <p class="meme-caption">Too cool for birthday hats? Never! 😎🐱</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/gifs/cat6.png" alt="Birthday cat 6" loading="lazy">
+                        <p class="meme-caption">The face I make when the party's over 🎊😾</p>
+                    </div>
+                </div>
+                <button class="carousel-btn carousel-prev" id="carousel-prev" aria-label="Previous slide">❮</button>
+                <button class="carousel-btn carousel-next" id="carousel-next" aria-label="Next slide">❯</button>
+                <div class="carousel-dots" id="carousel-dots"></div>
+            </div>
+            <p class="happy-ending">Happy Birthday, Reu! You're amazing! 🥳💖🎉</p>
+        </div>
+
+        <!-- Audio Control -->
+        <button class="audio-toggle" id="audio-toggle" aria-label="Toggle music">
+            <span class="audio-icon" id="audio-icon">🔊</span>
+        </button>
+    </section>
+
+    <!-- Background music (royalty-free chiptune-style embedded as silent until triggered) -->
+    <audio id="bg-audio" loop preload="auto">
+        <!-- We'll use Web Audio API for a generated melody instead -->
+    </audio>
+
+    <script src="scripts/animations.js"></script>
+    <script src="scripts/carousel.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>
